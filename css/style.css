@@ -1,3 +1,273 @@
-head {
-    background-color: red;
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Cyan: hsl(180, 66%, 49%)
+- Dark Violet: hsl(257, 27%, 26%)
+
+### Secondary
+
+- Red: hsl(0, 87%, 67%)
+
+### Neutral
+
+- Gray: hsl(0, 0%, 75%)
+- Grayish Violet: hsl(257, 7%, 63%)
+- Very Dark Blue: hsl(255, 11%, 22%)
+- Very Dark Violet: hsl(260, 8%, 14%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 18px
+
+### Fonts
+
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 500, 700
+
+## Icons
+
+For the social icons, you can either use the SVGs provided or a font icon library. Some suggestions for font icon libraries can be found below:
+
+- [Font Awesome](https://fontawesome.com)
+- [IcoMoon](https://icomoon.io)
+- [Ionicons](https://ionicons.com) */
+
+
+
+body{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 700;
+    color: hsl(255, 11%, 22%);
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+p {
+    color: hsl(257, 7%, 63%);
+}
+
+.btn {
+    width: 20%;
+    padding: 10px 10px;
+    border-radius: 10px;
+    background-color: #2Ad0d0;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #9AE1E2;
+}
+
+/*
+Sección Características
+*/
+.caracteristicas {
+    background-color: #3A3153;
+    background-color: #f0f1f6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 200px;
+}
+
+.cta {
+    padding: 4%;
+    border-radius: 10px;
+    width: 80%;
+    height:56px;
+    margin-top:-70px;
+    background-color: #3A3153;
+    background-image: url(../images/bg-shorten-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cta input {
+    width: 73%;
+    border-radius: 10px;
+    border: none;
+    padding: 1em;
+    font-size: 1.3em;
+    color: rgba(0,0,0,.1)
+}
+
+.cta button {
+    text-transform: uppercase;
+}
+
+.texto-caracteristicas {
+    width: 40%;
+    margin-top: 5% ;
+    margin-bottom: 7%;
+}
+
+
+.grupo-caracteristicas{
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.caracteristicas h2 ,.caracteristicas p {
+    text-align: center;
+}
+
+.caracteristica {
+    background-color: white;
+    height: 200px;
+    width: 310px;
+    padding: 2em;
+    z-index: 10;
+}
+
+.caracteristica h3 {
+    font-size: 1.25em;
+}
+
+.caracteristica p {
+    text-align: left;
+    font-size: .8em;
+}
+
+#car2 {
+    margin: 0 30px;
+    position: relative;
+    top: 40px;
+}
+
+#car3 {
+    position: relative;
+    top: 80px;
+}
+
+#car1 .icon {
+    background-image: url(../images/icon-brand-recognition.svg);
+    background-size: 40px;
+    background-repeat: no-repeat;
+}
+
+#car2 .icon {
+    background-image: url(../images/icon-detailed-records.svg);
+    background-size: 40px;
+    background-repeat: no-repeat;
+}
+
+#car3 .icon {
+    background-image: url(../images/icon-fully-customizable.svg);
+    background-size: 40px;
+    background-repeat: no-repeat;
+}
+
+.icon {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    background-position: center;
+    background-size: cover;
+    background-color: hsl(257, 27%, 26%);
+    position: relative;
+    left: 2em;
+}
+
+.linea-verde {
+    border-top: 6px solid hsl(180, 66%, 49%) ;
+    width: 50vw;
+    top:-80px;
+    position: relative;
+}
+
+.texto-caracteristica {
+    margin-top: -40px;
+    background-color: white;
+    width: 310px;
+    padding: 4em 2em 2em 2em;
+    z-index: 10;
+}
+
+.texto-caracteristica h3, .texto-caracteristica p {
+    text-align: left;
+    margin: 0;
+}
+
+.texto-caracteristica h3{
+    margin-bottom: 1em;
+}
+
+.texto-caracteristica p {
+    font-size: .8em;
+}
+
+
+/*
+Copy Action
+*/
+
+#copied{
+    display: none;
+}
+
+#copy: {
+    background-color: rebeccapurple;
+}
+
+input[type=checkbox]#copy-btn:checked + label ~ #copied{
+    display: inline-block;
+    height: auto;
+    background-color: hsl(180, 66%, 49%);
+    width: 100%;
+    opacity: .5;
+    font-weight: 400;
+}
+
+input[type=checkbox]#copy-btn:checked + label#copy{
+    display: none;
+}
+
+/*
+CTA 2 */
+
+.cta-2{
+    padding: 4%;
+    background-color: hsl(257, 27%, 26%);
+    background-image: url(../images/bg-boost-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cta-2 h2{
+    color: white;
+}
+
+

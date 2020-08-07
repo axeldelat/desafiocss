@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -34,8 +35,7 @@
         <section class="principal">
             <div class="texto-principal">
                 <h1>More than just shorter links</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio modi error ipsum soluta iure.</p>
-
+.url-wrapper<div class="url-wrapper"></div>
                 <button>Get Started</button>
             </div>
 
@@ -46,44 +46,64 @@
 
         <section class="caracteristicas">
             <div class="cta">
-                <input type="text">
-                <button>Shorten It!</button>
+                
+                <input type="url" placeholder="Shorten a link here..." required>
+                <button class="btn" type="submit">Shorten It!</button>
+                
+            </div>
+            <div class="cta-active">
+                <div class="url-wrapper">
+                    <span class="long-url">https://shorturl.com/really-long-url</span>
+                    <div class="action-url">
+                        <span class="short-url">
+                            <a>https://shorturl.com/lkjdf8</a>
+                        </span>
+                        <input type="checkbox" name="copy-btn" id="copy-btn"><label for="copy-btn" class="btn" id="copy">Copy</label>
+                        <button class="btn" id="copied">Copied</button>
+                    </div>
+                </div>
             </div>
             <div class="texto-caracteristicas">
                 <h2>Advanced Statistics</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod quas ullam quisquam dolor sunt!</p>
             </div>
             <div class="grupo-caracteristicas">
-                <article class="caracteristica" id="car1">
+                <article id="car1">
                     <div class="icon"></div>
-                    <h3>Brand Recognition</h3>
+                    <div class="texto-caracteristica">
+                        <h3>Brand Recognition</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati reiciendis nesciunt voluptatum
                         numquam voluptates aspernatur! Labore eos natus impedit facere officiis!</p>
+                    </div>
                 </article>
-                <article class="caracteristica" id="car2">
+                <article id="car2">
                     <div class="icon"></div>
-                    <h3>Brand Recognition</h3>
+                    <div class="texto-caracteristica">
+                        <h3>Brand Recognition</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati reiciendis nesciunt voluptatum
                         numquam voluptates aspernatur! Labore eos natus impedit facere officiis!</p>
+                    </div>
                 </article>
-                <article class="caracteristica" id="car3">
+                <article id="car3">
                     <div class="icon"></div>
-                    <h3>Brand Recognition</h3>
+                    <div class="texto-caracteristica">
+                        <h3>Brand Recognition</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati reiciendis nesciunt voluptatum
                         numquam voluptates aspernatur! Labore eos natus impedit facere officiis!</p>
+                    </div>
                 </article>
-
-
-                <div class="linea-verde"></div>
             </div>
+            <div class="linea-verde"></div>
+
 
         </section>
         <div class="cta-2">
             <h2>Boost your links today</h2>
-            <button>
+            <button class="btn">
                 Get Started
             </button>
         </div>
+
 
     </main>
     <footer>
@@ -120,8 +140,7 @@
             <li><img src="images/icon-twitter.svg" alt=""></li>
             <li><img src="images/icon-pinterest.svg" alt=""></li>
             <li><img src="images/icon-instagram.svg" alt=""></li>
-        </div>      
-        
+        </div>
     </footer>
 
 </body>
